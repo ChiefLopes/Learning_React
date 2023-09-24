@@ -1,8 +1,11 @@
 import React from "react";
 // import Planets from "./components/Planets";
 import { useState } from "react";
+import { ModeToggler } from "./components/ModeToggler";
+import Child from "./components/Child";
 
 function App() {
+    const date = new Date()
   const age = 100;
   const isGreen = false;
 
@@ -62,7 +65,10 @@ function App() {
             style={{ height: "30px", width: "50px" }}
             onClick={() => {
               setTextColor(textColor === "black" ? "red" : "black");
-            }}></button>
+                      }}></button>
+                  
+                  <ModeToggler />
+                  <Child  message={date.toLocaleTimeString()} />
         </div>
       </div>
     </>
