@@ -3,11 +3,13 @@ import React from "react";
 import { useState } from "react";
 import { ModeToggler } from "./components/ModeToggler";
 import Child from "./components/Child";
+import Message from "./components/Message";
 
 function App() {
     const date = new Date()
   const age = 100;
   const isGreen = false;
+  
 
   const [count, setCount] = useState(0);
   const [textColor, setTextColor] = useState("black");
@@ -68,7 +70,8 @@ function App() {
                       }}></button>
                   
                   <ModeToggler />
-                  <Child  message={date.toLocaleTimeString()} />
+                  <Child message={date.toLocaleTimeString()} />
+                  <Message />
         </div>
       </div>
     </>
