@@ -4,6 +4,7 @@ import { useState } from "react";
 import { ModeToggler } from "./components/ModeToggler";
 import Child from "./components/Child";
 import Message from "./components/Message";
+import Advise from "./components/Advise";
 
 function App() {
     const date = new Date()
@@ -72,6 +73,7 @@ function App() {
                   <ModeToggler />
                   <Child message={date.toLocaleTimeString()} />
                   <Message />
+                  <Advise />
         </div>
       </div>
     </>
