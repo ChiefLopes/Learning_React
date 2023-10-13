@@ -47,6 +47,12 @@ function App() {
         {/* {planets.map(
           (planet, key) => planet.isGasPlanet && <h1>{planet.name}</h1>
         )} */}
+        <button
+          style={{ height: "30px", width: "50px" }}
+          onClick={() => setCount(count - 1)}>
+          -
+                </button>
+                <button onClick={() => setCount(0)}>Reset</button>
 
         <div>
           <h1>{count}</h1>
@@ -55,12 +61,6 @@ function App() {
             onClick={() => setCount(count + 1)}>
             +
           </button>
-          <button
-            style={{ height: "30px", width: "50px" }}
-            onClick={() => setCount(count - 1)}>
-            -
-                  </button>
-                  <button onClick={() => setCount(0)}>Reset</button>
 
           {<h1 style={{ color: textColor }}>Lopes 4 life</h1>}
 
